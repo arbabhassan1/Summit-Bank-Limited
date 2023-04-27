@@ -6,7 +6,7 @@ var password=document.getElementById("password");
 function login(){
     if(username.value=="admin" && password.value=="184" || username.value=="user184" && password.value=="12345"){
         // window.location.href = "http://127.0.0.1:5500/dashboard.html";
-        window.open("/dashboard.html");
+        window.open("dashboard.html");
 
     } else if(username.value=="" || password.value==""){
         window.alert("Please fill username & password");
@@ -32,7 +32,7 @@ function slide_up(){
 
 function logout_user(){
     alert("You have been logged out")
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "index.html";
 
 }
 

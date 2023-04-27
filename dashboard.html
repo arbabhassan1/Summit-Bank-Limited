@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="user.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="script1.css">
+</head>
+
+<body>
+    <div class="mobile">
+        <h2 id="m-mesg">Please Open this Site on Desktop</h2>
+
+        <h5>Contact with Developer</h5>
+        <a id="link" href="https://arbabhassan.bio.link/">Contact Us</a>
+        
+    </div>
+<audio src="cash.mp3" id="cash-sound"></audio>
+<audio src="withdraw.mp3" id="withdraw-sound"></audio>
+    <div class="card" id="alert-box">
+        <h1 id="Transaction-alert">Transaction Alert</h1>
+        <h3 id="alert-name">congratulation!</h3>
+        <p id="alert-mesg">Message</p>
+        <h4>Thanks for chossing Us</h4>
+        <button id="alert-btn" onclick="close_alert()">Okay</button>
+    </div>
+    
+    <div class="card" id="Add-cash-box">
+        <h1 id="Transaction-alert">Add Cash</h1>
+        <h3 id="alert-name">Enter the Amount</h3>
+        <input type="number" name="" id="amount" placeholder="1000" required>
+        <button id="add-cash-btn" onclick="add_cash()">Add Cash</button>
+    </div> 
+  
+    <div class="card" id="withdraw-cash-box">
+        <h1 id="Transaction-alert">Withdraw Cash</h1>
+        <h3 id="alert-name">Enter the Amount</h3>
+        <input type="number" name="" id="w-amount" placeholder="1000" required>
+        <button id="add-cash-btn" onclick="withdraw()">Withdraw</button>
+    </div> 
+  
+
+    <div class="d-box">
+        <!-- Button of Slider -->
+        <div class="button" id="wave" onclick="slide_up()"><i class='bx bxs-circle-half'></i></div>
+<!-- Slider div -->
+        <div class="slide" id="slider">
+            <div class="profile"><img src="profile.jpg" alt=""></div>
+            <div class="user-name">Ali Hassan</div>
+            <div class="type"><span id="tag">Account Type:</span>Current Account</div>
+            <div class="countary"><span id="tag">Country:</span>Pakistan</div>
+            <div class="phone"><span id="tag">Phone:</span>+923171787457</div>
+            <div class="email"><span id="tag">Email:</span>21011556-184@uog.edu.pk</div>
+            <div id="panel">
+                <input type="submit" value="Log Out" id="logout" onclick="logout_user()">
+                <input type="submit" value="Close" id="close" onclick="close_slider()">
+            </div>
+        </div>
+
+        <!-- content Division -->
+
+        <div class="content-division">
+            <div class="head">
+                <div class="brand"><img src="logo.png" alt=""></div>
+                <div class="brand-name">
+                    <div id="name">Summit Bank Limited</div>
+                    <div id="tag">Empowering your financial future</div>
+                </div>
+            </div>
+            <div class="bank-alert">
+                <h3 id="alert-title">News & Alerts</h3>
+                <marquee behavior="" direction="left">
+                    <div class="scroll">
+                        <p>Welcome to Summit Bank Limited</p>
+                    <p>Your success is our mission</p>
+                    <p>Secure your future with us</p>
+                    <p>Invest in your dreams</p>
+                    <p>Discover financial freedom</p>
+                    </div>
+                </marquee>
+            </div>
+            <div class="function">
+                <div class="f1">
+                    <h1 id="statement">Account Statement</h1>
+                    <h3 class="title">Current Balance</h3>
+                    <h2 id="balance">0</h2>
+                    <h4>Max Limit 5 Million</h4>
+                    <br>
+                    <h2 id="limit-text">Daily Limit <span id="limit">  &nbsp; &nbsp; 50000</span></h2>
+                    <p>Terms & Conditions Apply</p>
+
+                </div>
+                <div class="f3">
+                    <div class="cash">
+                        <h2 id="cash-text">Add Cash</h2>
+                        <p>Maximum Deposit Limit 5 Million</p>
+                        <p>Click below to Add Cash</p>
+
+                        <button id="cash-btn" onclick="show_cash()">Add Cash</button>
+                    </div>
+                    <div class="withdraw">
+                        <h2 id="withdraw-text">Withdraw Cash</h2>
+                        <p>Maximum Daily Limit  50,000</p>
+                        <p>Click below to withdraw Cash</p>
+                        <button id="withdraw-btn" onclick="show_withdraw()">Withdraw</button>
+                    </div>
+
+                </div>
+                <div class="f2">
+                    <div class="file">
+                        <h1>                        E-Statement
+                        </h1>
+                        <h5>Get online E-Statement of your Account</h5>
+                        <a href="stat.jpg" id="download">E-Statement</a>
+                    </div>
+                    <div class="contact">
+                        <h2>Get Connected </h2>
+                        <h3>Summit Bank Limited</h3>
+                        <h5>CONTACT CENTRE</h5>
+                       
+                        <p id="no">
+General Helpline: 111-111-425 <br>
+Remittance Helpline: 111-555-425 <br>
+                        </p>
+                        <div class="nav">
+                            <ul>
+                                <li><a href=""><i class='bx bxs-phone'></i></a></li>
+                                <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                                <li><a href=""><i class='bx bxl-instagram-alt' ></i></a></li>
+                                <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Made with <span><i class='bx bxs-heart'></i></span>By <a href="https://arbabhassan.bio.link/">Arbab Hassan</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
